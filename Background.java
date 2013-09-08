@@ -13,7 +13,7 @@
       private Timer t;
 		private int hits=0; 
 		//constructor   
-       public BkgPanel()
+       public Background()
       {
          myImage =  new BufferedImage(N, N, BufferedImage.TYPE_INT_RGB);
          myBuffer = myImage.getGraphics();
