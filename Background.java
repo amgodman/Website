@@ -2,7 +2,7 @@
    import java.awt.*;
    import java.awt.event.*;
    import java.awt.image.*;
-    public class BkgPanel extends JPanel
+    public class Background extends JPanel
    {
       private static final int N = 800;
       private static Color background = new Color(0, 0, 255);
