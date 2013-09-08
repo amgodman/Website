@@ -7,7 +7,7 @@
          frame.setSize(816, 876);    //makes the mouse location correct
          frame.setLocation(0, 0);
          frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-         BkgPanel p = new BkgPanel();
+         BkgPanel p = new Background();
          frame.setContentPane(p);
          p.requestFocus();
          frame.setVisible(true);
