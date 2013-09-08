@@ -1,5 +1,5 @@
    import javax.swing.JFrame;
-    public class BkgDriver
+    public class Driver
    {
        public static void main(String[] args)
       { 
