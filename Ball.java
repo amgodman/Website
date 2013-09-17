@@ -1,7 +1,7 @@
 import java.awt.*;
 public class Ball
 {
-   private int r=0;
+   private int r=0, alpha=255;
    private double x,y,dx,dy=0.0;
    private double red,green,blue;
    private Color col, target;
@@ -42,6 +42,10 @@ public class Ball
    {
       return dy;
    }
+   public void setAlpha(int a)
+   {
+      alpha=a;
+   }
    private void move(int mx, int my, Color target)
    {
       x+=dx;
@@ -75,12 +79,12 @@ public class Ball
       red+=dr/100;
       green+=dg/100;
       blue+=db/100;
-      col=new Color((int)(red),(int)(green),(int)(blue));
+      col=new Color((int)(red),(int)(green),(int)(blue), alpha);
   }
-   public void draw(Graphics myBuffer, int mx, int my, Color target)
+   public void draw(Graphics myBuffer, int mx, int my, Color target, boolean b)
    {
       myBuffer.setColor(col);
       myBuffer.fillOval((int)x-r/2,(int)y-r/2,r,r);
-      move(mx, my, target);
+      if(b) move(mx, my, target);
    }
 }
